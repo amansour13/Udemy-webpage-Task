@@ -1,0 +1,11 @@
+:root {
+    --black-color:  #1C1D1F; /*example of using it: color: var(--black-colr);*/
+    --yellow-color: #ECEB98;
+    --purple-color: #994885;
+}
+
+*{
+    font-family: 'open-sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
