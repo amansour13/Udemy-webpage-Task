@@ -12,23 +12,28 @@
     <title>Udemy</title>
 </head>
 <body>
-    <div class="message">
+    <div class="message" id="m">
         <div>
             <p><span>Get courses from E£199.99 for a limited time</span> | A special offer for new students </p>
             <h3>Ends in 5h 59m 26s.</h3>
         </div>
-        <span class="xSign">X</span>
+        <span class="xSign" onclick="disappear()">X</span>
     </div>
     <header>
+        <div class="navbar_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="mainLogo"><img src="Assests/logo-udemy.svg" alt="udemy logo"></div>
-        <div class="s2">Categories</div>
+        <div class="s2"><a href="#">Categories</a></div>
         <div class="searchSection">
             <i class="fa fa-search"></i>
             <input type="search" name="search" id="search" placeholder="search for anything">
         </div>
         <ul class="s4">
-            <li>Udemy Business</li>
-            <li>Tech on Udemy</li>
+            <li><a href="#">Udemy Business</a></li>
+            <li><a href="#">Tech on Udemy</a></li>
         </ul>
         <ul class="s5">
             <li><i class="fa fa-shopping-cart"></i></li>
@@ -36,13 +41,17 @@
             <li><button class="off">Sign up</button></li>
             <li><button class="on"><i class="fa fa-globe"></i></button></li>
         </ul>
+        <div class="miniIcons">
+            <i class="fa fa-search"></i>
+            <i class="fa fa-shopping-cart"></i>
+        </div>
     </header>
     <div class="container">
         <div>
             <h1>New to Udemy? Lucky you.</h1>
             <p>Courses start at E£199.99. Get your new-student offer before it expires.</p>
         </div>
-        <img src="Assests/home page image.png" alt="">
+        <img src="Assests/home page image.png" alt="alarm" class="mainImg">
     </div>
     <script src="script.js"></script>
 </body>
