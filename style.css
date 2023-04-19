@@ -9,3 +9,75 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    background-color: rgb(245, 244, 244);
+    overflow: hidden;
+}
+
+/* message section */
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-color);
+    width: 98vw;
+    padding: 10px;
+    position: relative;
+}
+
+.xSign{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    }
+
+.message div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.message div span{
+    font-weight: 700;
+}
+
+/* navbar */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 98vw;
+    background-color: white;
+    padding: 10px;
+}
+
+.mainLogo img{
+    width: 8vw;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* conatiner */
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container div:first-child{
+    padding: 30px;
+    width: 300px;
+    background-color: white;
+}
+.container div:first-child h1{
+    margin-bottom: 10px;
+}
