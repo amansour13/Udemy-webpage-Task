@@ -1,11 +1,207 @@
 :root {
-    --black-color:  #1C1D1F; /*example of using it: color: var(--black-colr);*/
+    --black-color: #1C1D1F;
+    /*example of using it: color: var(--black-colr);*/
     --yellow-color: #ECEB98;
     --purple-color: #994885;
 }
 
-*{
+* {
     font-family: 'open-sans', sans-serif;
     margin: 0px;
     padding: 0px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+}
+
+.mainTitle {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 0;
+}
+
+.mainDisc {
+    margin: 10px 0;
+}
+
+.topics_slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.topic {
+    margin-right: 20px;
+}
+
+.gt {
+    color: #5624d0;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d1d7dc;
+    padding: 20px;
+}
+
+.sectionDisc {
+    margin: 10px 0;
+    max-width: 70%;
+}
+
+.sectionBtn {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+/* 
+ */
+
+
+.courses_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.column {
+    width: 18%;
+    margin: auto;
+    position: relative;
+}
+
+.courseImg {
+    width: 100%;
+    border: 1px #d1d7dc solid;
+}
+
+.course_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.courseTitle {
+    font-size: small;
+    font-weight: bolder;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+   
+}
+
+.creator{
+    opacity: 0.5;
+}
+
+.note {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-color: #eceb98;
+    color: #3d3c0a;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #178C8C;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
