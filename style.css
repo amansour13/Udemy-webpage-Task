@@ -1,11 +1,12 @@
 :root {
-    --black-color:  #1C1D1F; /*example of using it: color: var(--black-colr);*/
+    --black-color: #1C1D1F;
+    /*example of using it: color: var(--black-colr);*/
     --yellow-color: #ECEB98;
     --purple-color: #994885;
     --grey-color: #F8F8FA;
 }
 
-*{
+* {
     font-family: 'open-sans', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -13,7 +14,7 @@
 
 body{
     background-color: #F8F8FA;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a{
@@ -28,7 +29,7 @@ a{
     justify-content: center;
     align-items: center;
     background-color: var(--yellow-color);
-    width: 99.5vw;
+    width: 98vw;
     padding: 10px;
     position: relative;
 }
@@ -60,7 +61,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 99.5vw;
+    width: 98vw;
     background-color: white;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -257,4 +258,186 @@ ul{
         text-align: center;
         font-size:xx-small;
     } 
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+}
+
+.mainTitle {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 0;
+}
+
+.mainDisc {
+    margin: 10px 0;
+}
+
+.topics_slider {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+
+
+.topic {
+    margin-right: 20px;
+    opacity: 0.5;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.topicActive{
+    opacity: 1;
+}
+
+.gt {
+    color: #5624d0;
+    position: absolute;
+    right: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #d1d7dc;
+    padding: 20px;
+}
+
+.sectionDisc {
+    margin: 10px 0;
+    max-width: 70%;
+}
+
+.sectionBtn {
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+/* 
+ */
+
+
+.courses_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.column {
+    width: 18%;
+    margin: auto;
+    position: relative;
+}
+
+.courseImg {
+    width: 100%;
+    border: 1px #d1d7dc solid;
+}
+
+.course_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.courseTitle {
+    font-size: small;
+    font-weight: bolder;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+   
+}
+
+.creator{
+    opacity: 0.5;
+}
+
+.note {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background-color: #eceb98;
+    color: #3d3c0a;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+/* ///////////////////////////////////////////////// */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:100%;
+    user-select: none;
+    
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+   opacity: 0.5;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
